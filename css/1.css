@@ -1,0 +1,86 @@
+:root {
+    /*colores base*/
+    --color-fondo-principal: #1C1C28;
+    --color-texto-principal: #E0E0E0;
+    --color-enfasis: #FFAC41;
+    --color-condicion-verdadera: #4CAF50;
+    --color-condicion-falsa: #FF5252;
+    --color-borde: #424256;
+    --color-boton-link: #2986cc;
+
+    /* Tamaños base */
+    --font-size-base: 18px;
+    --font-size-heading: 2rem;
+    --font-size-subheading: 1.5rem;
+    --spacing-large: 50px;
+    --spacing-medium: 40px;
+    --spacing-small: 15px;
+}
+
+body {
+    background-color: var(--color-fondo-principal);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto-principal);
+}
+
+h1 {
+    font-size: clamp(40px, 5vw + 1rem, 60px);
+    color: var(--color-enfasis);
+}
+
+
+h2 {
+    font-size: var(--font-size-subheading);
+}
+
+div {
+    background-color: var(--color-borde);
+    border-radius: 30px;
+    margin: var(--spacing-large) auto;
+    padding: var(--spacing-small) var(--spacing-medium);
+    max-width: 800px; /* Limita el ancho para pantallas grandes */
+}
+
+p {
+    text-align: left;
+    font-size: var(--font-size-base);
+}
+
+/* Estilos responsive para pantallas medianas */
+@media (max-width: 768px) {
+    h1 {
+        font-size: calc(var(--font-size-heading) - 0.5rem);
+    }
+
+    h2 {
+        font-size: calc(var(--font-size-subheading) - 0.3rem);
+    }
+
+    div {
+        margin: var(--spacing-medium) auto;
+        padding: var(--spacing-small);
+        width: 90%;
+    }
+}
+
+/* Estilos responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: calc(var(--font-size-heading) - 1rem);
+    }
+
+    h2 {
+        font-size: calc(var(--font-size-subheading) - 0.8rem);
+    }
+
+    p {
+        font-size: calc(var(--font-size-base) - 2px);
+    }
+
+    div {
+        margin: var(--spacing-small) auto;
+        padding: var(--spacing-small);
+        width: 95%;
+    }
+}
