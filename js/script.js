@@ -58,6 +58,15 @@ if (a > b) { //declara la variable condicionada que debe de ser verdadera para q
     console.log('a es menor que b'); //En caso de que la primera condicional sea falsa, se ejecuta esta condicional.
     alert('a es menor que b');
 }
+
+// tercer ejercicio
+let a = prompt('Ingresa el valor de a: '); // Damos la opción de ingresar el valor de a
+let b = prompt('Ingresa el valor de b: '); // Damos la opción de ingresar el valor de b
+
+let resultado = (a > b) ? 'a es mayor que b' : 'a es menor que b';
+
+console.log(resultado);
+alert(resultado);
 */
 
 
